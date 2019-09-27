@@ -16,7 +16,7 @@ body {
   padding-top: 200px;
 }
 .intro p{
-	font-family: Karla;
+	font-family: Karla, sans-serif, Open Sans;
 	font-size: 20px;
 }
 nav ul {
