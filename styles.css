@@ -1,6 +1,6 @@
-html,
+@import url('https://fonts.googleapis.com/css?family=Karla|Oxygen&display=swap');
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oxygen' , Open Sans, sans-serif;
   text-align: center;
 }
 
@@ -14,6 +14,10 @@ body {
   background: #24959e;
   min-height: 420px;
   padding-top: 200px;
+}
+.intro p{
+	font-family: Karla;
+	font-size: 20px;
 }
 nav ul {
   text-align: left;
