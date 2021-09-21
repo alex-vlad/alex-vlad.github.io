@@ -1,0 +1,469 @@
+/*reset css*/
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    font-family: 'Georama', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #222748;
+}
+h1{
+    font-family: 'Georama', sans-serif;
+    font-size: 60px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+h2{
+    font-family: 'Georama', sans-serif;
+    font-size: 48px;
+    color: #222748;
+    font-weight: bold;
+}
+h3{
+    font-family: 'Georama', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #222748;
+}
+/* header */
+.container{
+    max-width: 1210px;
+    margin: auto;
+    padding: 0 20px;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header input, #header label{
+    display: none;
+}
+#header label div {
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background:black;
+    transition: all .3s
+}
+#header img{
+    height: 100%;
+    object-fit: cover;
+}
+#menu li{
+    display: inline-block;
+    margin-right: 20px;
+}
+#menu li a{
+    color: #222748;
+    font-size: 16px;
+}
+#menu li a:hover, #footer #menu li a:hover{
+    color: orange;
+}
+/* hero-section*/
+#hero-section-bg{
+    background: url('images/herobg.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+#hero-section-bg::after,#consultation-section::after,#contact-section-bg::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.45);
+}
+#hero-section *{
+    z-index: 1;
+}
+#hero-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#hero-section h1{
+    padding-top: 250px;
+}
+#hero-section p{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+    text-align: center;
+}
+#hero-section a, #consultation-section a{
+    background: #FF9900 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    padding: 15px 62px;
+    display: block;
+    margin-bottom: 250px;
+    margin-top: 45px;
+    color: white;
+}
+#hero-section a:hover, #consultation-section a:hover{
+    background:peachpuff
+}
+/* introduction section*/
+#introduction,#luxury-section{
+    display:flex;
+    padding-top: 150px;
+    position: relative;
+}
+#intro-left,#intro-right,#luxury-left,#luxury-right,#location-left,#location-right{
+    width: 50%;
+}
+#intro-left p{
+    margin-right: 100px;
+}
+#intro-right div{
+    border: 5px solid #FF9900;
+}
+#intro-right img{
+    width: 100%;
+    object-fit: cover;
+    transform: translate(6%, -8%);
+}
+#box-one, #box-two,#box-three,#box-four,#box-five{
+    border: 3px solid #FF9900;
+    width: 123px;
+    height: 104px;
+    position: absolute;
+    left: -3px;
+    top: 219px;
+}
+/* luxury section*/
+#luxury-left img{
+    width: 100%;
+    object-fit: cover;
+}
+#luxury-right{
+    margin-left: 150px;
+}
+#box-two{
+    left: 670px;
+}
+/*location-section*/
+#location-section-bg{
+    background:#ECECEC;
+    margin: 150px 0;
+}
+#location-section{
+    display: flex;
+    position: relative;
+}
+#location-left p{
+    margin-right: 200px;
+    padding-bottom: 210px;
+}
+#location-right iframe{
+    width: 100%;
+    height: 100%;
+}
+#box-three{
+    left: -1px;
+    top: 67px;
+}
+/*consultation section*/
+#consultation-section h2{
+    color: white;
+    padding-top: 150px;
+}
+#consultation-section *{
+    z-index: 1;
+}
+#consultation-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-height: 70vh;
+    background: url('images/consultation-bg.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    transform: translate(3%,-5%);
+}
+#consult-bg{
+    border: 5px solid #FF9900;
+}
+/*comfort-section*/
+#comfort-section{
+    display: flex;
+    position: relative
+}
+#comfort-left{
+    width: 60%;
+}
+#comfort-left img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    transform: translate(0,-90px);
+}
+#comfort-right{
+    width: 40%;
+    margin-left: 160px;
+    transform: translate(0,-90px);
+}
+#box-four{
+    left: 762px;
+    top: -19px;
+}
+#comfort-bg{
+    background:#ECECEC;
+    margin-top: 250px;
+}
+/*bedroom section*/
+#bedroom-bg{
+    background:#ECECEC;
+}
+#bedroom-section{
+    display: flex;
+    position: relative;
+}
+#bedroom-right{
+    width: 60%;
+}
+#bedroom-right img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+#bedroom-left{
+    width: 40%;
+    margin-right: 130px;
+}
+#box-five{
+    left: 3px;
+    top: 66px;
+}
+/*social media section*/
+#social-media{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 140px;
+    padding-bottom: 120px;
+    font-size: 35px;
+}
+#social-media a{
+    color: orange;
+}
+#social-media a:hover{
+    color: peachpuff;
+}
+/*contact-section*/
+#contact-section-bg{
+    background: url('images/keep-in-touch.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+#contact-section *{
+    z-index: 1;
+}
+#contact-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 150px;
+}
+#contact-section h2{
+    color: white;
+}
+#contact-section p{
+    font-family: 'Roboto';
+    color: white
+}
+#contact-us{
+    display: flex;
+    padding-top: 50px;
+    text-align: left;
+}
+#contact-us div{
+    width: 33%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 0.6;
+    margin-left: 30px;
+    padding: 30px;
+}
+#contact-us div p{
+    font-family:'Atkinson Hyperlegible';
+    font-size: 15px;
+    color: #222748;
+}
+#contact-us div:nth-child(2) iframe{
+    width:100%;
+    height: 100%;
+}
+#contact-us div:nth-child(2){
+    padding: 0;
+}
+#contact-us div:nth-child(1) a{
+    display: block;
+    color: black;
+}
+#contact-us .social{
+    color: orange;
+}
+#contact-us .social:hover{
+    color: peachpuff;
+}
+#name, #message, #email{
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    background: #222748;
+    color: #C2C5DB;
+    font-family:'Atkinson Hyperlegible';
+    font-size: 15px;
+}
+#contact-us input[type=submit]{
+    background: #FF9900 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    padding: 20px 56px;
+    border: none;
+    cursor: pointer;
+}
+#contact-us input[type=submit]:hover{
+    background: peachpuff;
+}
+/*footer section*/
+#footer-bg{
+    background: #222748;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer #menu li a{
+    color: white;
+}
+#footer div:nth-child(3) a{
+    display: block;
+    background: #FF9900;
+    padding: 33px 66px;
+}
+#footer div:nth-child(3) a:hover{
+    background: peachpuff;
+}
+#arrow{
+    color: white;
+    font-size: 20px;
+}
+@media (max-width: 800px) {
+    /* header menu - mobile */
+    #header label{
+        display: block;
+    }
+    #header{
+        position: relative;
+        flex-direction: row-reverse;
+    }
+    #header li{
+        display: block;
+        line-height: 30px;
+        padding-left: 25px;
+    }
+    #menu {
+        width: 100%;
+        background: white;
+        left:0;
+        top: 100%;
+        position: absolute;
+        z-index: 1;
+        transition: all .3s;
+        transform: translate(-100%, 0);
+        opacity: 0;
+    }
+    #header input:checked + label + #menu{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    #header input:checked + label div:first-child {
+        transform: translate(0, 8px) rotate(45deg)
+    }
+    #header input:checked + label div:nth-child(2) {
+        transform: translate(-100%, 0);
+        opacity: 0;
+    }
+    #header input:checked + label div:last-child {
+        transform: translate(0, -8px) rotate(-45deg)
+    }
+    /*hero section mobile*/
+    #hero-section h1{
+        text-align: center;
+    }
+    /*introduction section mobile*/
+    #introduction{
+        flex-direction: column-reverse;
+        padding-top: 50px;
+    }
+    #intro-right,#intro-left,#luxury-left,#luxury-right,#location-right,#location-left,#comfort-left,#comfort-right,#bedroom-right,#bedroom-left{
+        width: 100%;
+    }
+    #box-one, #box-two, #box-three, #box-four, #box-five{
+        display: none;
+    }
+    /*luxury section mobile*/
+    #luxury-section{
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    #luxury-right{
+        margin-left: 0;
+    }
+    /*location section mobile*/
+    #location-section-bg{
+        margin: 100px 0;
+    }
+    #location-section{
+        flex-direction: column;
+    }
+    #location-left p{
+        margin-right: 0;
+        padding-bottom: 0;
+    }
+    #location-right iframe{
+        object-fit: cover;
+        width: 100%;
+    }
+    /*consultation mobile*/
+    #consultation-section{
+        text-align: center;
+    }
+    /* comfort section mobile*/
+    #comfort-bg{
+        margin-top: 200px;
+    }
+    #comfort-section{
+        flex-direction: column;
+    }
+    #comfort-right{
+        margin-left: 0;
+    }
+    /*bedroom section mobile*/
+    #bedroom-section{
+        flex-direction: column-reverse;
+    }
+    /*contact mobile*/
+    #contact-us{
+        flex-direction: column;
+    }
+    #contact-us div{
+        width: 100%;
+        margin-left: 0;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+}
