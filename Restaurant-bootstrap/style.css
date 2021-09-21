@@ -1,0 +1,44 @@
+#hero-section{
+    background:url('images/hero-section-bg.png') no-repeat center center;
+    background-size: cover;
+    padding: 300px 0;
+}
+.cards{
+    background:white;
+    padding-top: 70px;
+    margin-left: 20px;
+    border-radius: 50px 50px 0px 0px;
+    transform: translate(0, -120px);
+}
+#description{
+    background:white;
+    padding: 50px 100px;
+}
+#menu-list div{
+    width: 15%;
+    color: white;
+}
+#menu-list div a{
+    text-decoration: none;
+}
+.tab-btn.active{
+    background: #c9bcbc;
+}
+.content{
+    display: none;
+}
+.content.active{
+    display: block;
+}
+@media (max-width:769px){
+    #description{
+        padding: 50px 20px;
+    }
+    .cards{
+        margin-left: 0;
+    }
+    #menu-list div{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

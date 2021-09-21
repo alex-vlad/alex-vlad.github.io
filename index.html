@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto p-2">
+              <li class="nav-item me-5">
+                <a class="nav-link active" href="#hero-section">Home</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" href="#about">About me</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section id="hero-section" class="text-center bg-overlay">
+        <div class="container align-items-center">
+            <h1 class="text-primary fw-bold mt-5 pt-5">Front-End Web Developer</h1>
+            <p class="lead">with a passion for learning</p>
+        </div>
+    </section>
+    <section id="about" class="text-center">
+        <div class="container">
+            <h2 class="fw-bold my-5">About <span class="text-primary">Me</span></h2>
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="images/computer.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 text-start p-4">
+                    <p>I am highly-motivated, result oriented, self-driven, hard-working, fast learner and constantly seeking to improve my skills and am fully aware of the latest Front-end Development Tools.</p>
+                    <p>In addition to this, I have the ability to adapt to any type of team environment, I am team oriented and get along with others when working in a group setting. I also have the ability to work independently while staying on schedule and meeting those tight deadlines.</p> 
+                    <p>Below is a list of my current technical skills:</p>
+                    <div id="icons" class="row g-3 mt-2">
+                        <div class="col-lg-3 d-flex flex-column align-items-center">
+                            <img src="images/html.png" alt="html" class="img-fluid">
+                            <p>HTML</p>
+                        </div>
+                        <div class="col-lg-3 d-flex flex-column align-items-center">
+                            <img src="images/css.png" alt="css" class="img-fluid">
+                            <p>CSS</p>
+                        </div>
+                        <div class="col-lg-3 d-flex flex-column align-items-center">
+                            <img src="images/javascript.png" alt="javascript" class="img-fluid">
+                            <p>Javascript</p>
+                        </div>
+                        <div class="col-lg-3 d-flex flex-column align-items-center">
+                            <img src="images/bootstrap.png" alt="bootstrap" class="img-fluid">
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="col-lg-3 d-flex flex-column align-items-center">
+                            <img src="images/sql.png" alt="sql" class="img-fluid w-100">
+                            <p>SQL</p>
+                        </div>
+                        <div class="col-lg-3 d-flex flex-column align-items-center">
+                            <img src="images/python.png" alt="python" class="img-fluid w-50">
+                            <p>Python</p>
+                        </div>
+                        <div class="col-lg-3 d-flex flex-column align-items-center">
+                            <img src="images/java.jpg" alt="java" class="img-fluid w-100">
+                            <p>Java</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="p-5 text-center">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p class="mt-3 lead">Click on the image to see the project description.</p>
+            <div class="row g-3 my-4 align-items-center justify-content-center" id="portfolio-items">
+                <div class="col-lg-3">
+                    <a class="btn" data-bs-toggle="modal" data-bs-target="#bootstrap-restaurant"><img src="images/restaurant-bootstrap.PNG" alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-lg-3">
+                    <a class="btn" data-bs-toggle="modal" data-bs-target="#restaurant"><img src="images/restaurant.PNG" alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-lg-3">
+                    <a class="btn" data-bs-toggle="modal" data-bs-target="#home-agency"><img src="images/home-agency.PNG" alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-lg-3">
+                    <a class="btn" data-bs-toggle="modal" data-bs-target="#education-bootstrap"><img src="images/education-bootstrap.PNG" alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-lg-3">
+                    <a class="btn" data-bs-toggle="modal" data-bs-target="#calculator"><img src="images/calculator.PNG" alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-lg-3">
+                    <a class="btn" data-bs-toggle="modal" data-bs-target="#todoapp"><img src="images/todo-app.PNG" alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="btn" data-bs-toggle="modal" data-bs-target="#discord-bot"><img src="images/discord-bot.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="col-lg-3">
+                <a class="btn" data-bs-toggle="modal" data-bs-target="#java-projects"><img src="images/java-projects.png" alt="" class="img-fluid"></a>
+              </div>
+            </div>
+            <div class="modal fade" id="bootstrap-restaurant" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Landing page example responsive</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body p-5 text-start">
+                        <h5>Technologies used to create the project:</h5>
+                        <ul class="mt-4">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <p>Click on the <a href="Restaurant-bootstrap/index.html" target="_blank"> image</a> to see the website on the new tab.
+                        </p>
+                        <p>Click <a href="" target="_blank"> here</a> to get the source code from GitHub.</p>
+                        <a href="" target="_blank"><img src="images/restaurant-bootstrap.PNG" alt="" class="img-fluid mt-3"></a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal fade" id="restaurant" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Landing page example responsive</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body p-5 text-start">
+                        <h5>Technologies used to create the project:</h5>
+                        <ul class="mt-4">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>jQuery</li>
+                        </ul>
+                        <p>Click on the <a href="Restaurant/index.html" target="_blank"> image</a> to see the website on the new tab.
+                        </p>
+                        <p>Click <a href="" target="_blank"> here</a> to get the source code from GitHub.</p>
+                        <a href="" target="_blank"><img src="images/restaurant.PNG" alt="" class="img-fluid mt-3"></a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal fade" id="home-agency" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Landing page example responsive</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body p-5 text-start">
+                        <h5>Technologies used to create the project:</h5>
+                        <ul class="mt-4">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <p>Click on the <a href="Home/index.html" target="_blank"> image</a> to see the website on the new tab.
+                        </p>
+                        <p>Click <a href="" target="_blank"> here</a> to get the source code from GitHub.</p>
+                        <a href="" target="_blank"><img src="images/home-agency.PNG" alt="" class="img-fluid mt-3"></a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal fade" id="education-bootstrap" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Landing page example responsive</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body p-5 text-start">
+                        <h5>Technologies used to create the project:</h5>
+                        <ul class="mt-4">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <p>Click on the <a href="Education/index.html" target="_blank"> image</a> to see the website on the new tab.
+                        </p>
+                        <p>Click <a href="" target="_blank"> here</a> to get the source code from GitHub.</p>
+                        <a href="" target="_blank"><img src="images/education-bootstrap.PNG" alt="" class="img-fluid mt-3"></a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal fade" id="calculator" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">JavaScript Calculator</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body p-5 text-start">
+                        <h5>Technologies used to create the project:</h5>
+                        <ul class="mt-4">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <p>Click on the <a href="Javascript-projects/calculator/index.html" target="_blank"> image</a> to see the website on the new tab.
+                        </p>
+                        <p>Click <a href="" target="_blank"> here</a> to get the source code from GitHub.</p>
+                        <a href="" target="_blank"><img src="images/calculator.PNG" alt="" class="img-fluid mt-3"></a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal fade" id="todoapp" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">JavaScript Todo App</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body p-5 text-start">
+                        <h5>Technologies used to create the project:</h5>
+                        <ul class="mt-4">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <p>Click on the <a href="Javascript-projects/ToDo-app/index.html" target="_blank"> image</a> to see the website on the new tab.
+                        </p>
+                        <p>Click <a href="" target="_blank"> here</a> to get the source code from GitHub.</p>
+                        <a href="" target="_blank"><img src="images/todo-app.PNG" alt="" class="img-fluid mt-3"></a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+             </div>
+             <div class="modal fade" id="discord-bot" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Discord bot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body p-5 text-start">
+                      <h5>Technologies used to create the project:</h5>
+                      <ul class="mt-4">
+                          <li>Python</li>
+                          <li>MySql</li>
+                      </ul>
+                      <p class="lead">Fun RPG bot with music, a self designed duel system, moderator and plenty other commands.</p>
+                      <p>Click <a href="" target="_blank"> here</a> to get the source code from GitHub.</p>
+                      <a href="" target="_blank"><img src="images/discord-bot.png" alt="" class="img-fluid mt-3"></a>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+           </div>
+           <div class="modal fade" id="java-projects" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Java Projects</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-5 text-start">
+                    <h5>Technologies used to create the project:</h5>
+                    <ul class="mt-4">
+                        <li>Java</li>
+                    </ul>
+                    <p>Alarm Clock - A simple clock where it plays a sound after X number of minutes/seconds/hours.</p>
+                    <p>Calculator - A simple calculator to do basic operators.</p>
+                    <p>Unit Converter - Converts various units between one another. The user enters the type of unit being entered, the type of unit they want to convert to and then the value. The program will then make the conversion.</p>
+                    <p>EmailApp - Creates an email for a company, generates a random password and allows the user to add an alternate email, customize mailbox size and change the current password.</p>
+                    <p>Click <a href="" target="_blank"> here</a> to get the source code from GitHub.</p>
+                    <a href="" target="_blank"><img src="images/java-projects.png" alt="" class="img-fluid mt-3"></a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+         </div>
+        </div>
+    </section>
+    <footer id="footer" class="text-center bg-light text-dark">
+        <div class="container">
+            <p class="pt-5">Copyright &copy;2021 My Portfolio by Alex Vlad.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
